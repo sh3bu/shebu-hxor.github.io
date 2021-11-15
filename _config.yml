@@ -8,7 +8,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: ColdFusionX                          # the main title
+title: shebu-hxor                          # the main title
 
 tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
           
@@ -18,28 +18,28 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://ColdFusionX.github.io'
 
-author: Mayank Deshmukh               # change to your full name
+author: Shebu               # change to your full name
 
 avatar: /assets/img/sample/profile.jpg   # support internet resources
 
 github:
-  username: ColdFusionX             # change to your github username
+  username: shebu-hxor             # change to your github username
 
 twitter:
-  username: ColdFusionX_            # change to your twitter username
+  username: shebu_hxor            # change to your twitter username
 
 social:
-  name: Mayank Deshmukh                  # it will shows as the copyright owner in Footer
-  email: coldfusionx@outlook.com             # change to your email address
+  name: Shebu                  # it will shows as the copyright owner in Footer
+  email: shebutvm@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/ColdFusionX_      # change to your twitter homepage
-    - https://github.com/ColdFusionX       # change to your github homepage
+    - https://twitter.com/shebu_hxor      # change to your twitter homepage
+    - https://github.com/shebu-hxor       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: CtBtIysuQ8b6k36FI7jqU-o34DRoA_sye50a-RNtPPY # change to your verification string
+google_site_verification:  # change to your verification string
 
 #--------------------------
 
@@ -52,7 +52,7 @@ baseurl: ''
 timezone: Asia/Kolkata
 
 google_analytics:
-  id: 'UA-177226674-1'          # Fill with your Google Analytics ID
+  id: ''          # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
