@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Tryhackme — Retro Writeup"
 date: 2021-11-16  
 categories: [Tryhackme,Windows Machines]
