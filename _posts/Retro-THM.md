@@ -1,6 +1,5 @@
 ---
-layout: posts
-permalink: /_posts/Retro-THM.md
+layout: post
 title: "Tryhackme — Retro Writeup"
 date: 2021-11-16  
 categories: [Tryhackme,Windows Machines]
