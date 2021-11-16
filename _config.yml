@@ -8,7 +8,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Shebu                          # the main title
+title: Shebu_hxor                          # the main title
 
 tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
           
@@ -82,7 +82,7 @@ theme_mode: dark
 # boolean type, global switch for ToC in posts.
 toc: true
 
-paginate: 10
+paginate: 4
 
 markdown: kramdown
 
