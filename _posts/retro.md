@@ -1,3 +1,11 @@
+---
+title: "Tryhackme — Retro Writeup"
+date: 2021-11-16  
+categories: [Tryhackme,Windows Machines]
+tags: [masscan, legacy, XP, SMB, ms08-67, ms17-010, shellcode, whoami, smbserver, metasploit, ms08_067_netapi]
+image: /assets/img/Posts/Retro/retro.png
+---
+
 ## Description - 
 ____________________________________________________
 
@@ -12,7 +20,7 @@ There are two distinct paths that can be taken on Retro. One requires significan
 | **Room Link   -** | https://tryhackme.com/room/retro |
 | **Creator   -** | [DarkStar7471](https://twitter.com/darkstar7471) |
 
-## Enumeration
+## Enumeration -
 ____________________________________________________
 
 **Task 1 - Pwn**
