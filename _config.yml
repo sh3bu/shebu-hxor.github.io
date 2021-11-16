@@ -13,14 +13,14 @@ title: shebu-hxor                          # the main title
 tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
           
 description: >-                        # used by seo meta and the atom feed
-  Realm of Knowledge
+  
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'https://ColdFusionX.github.io'
+url: 'https://shebu-hxor.github.io'
 
 author: Shebu               # change to your full name
 
-avatar: /assets/img/sample/profile.jpg   # support internet resources
+avatar: /assets/img/sample/profileavatar.png   # support internet resources
 
 github:
   username: shebu-hxor             # change to your github username
@@ -64,7 +64,7 @@ google_analytics:
 
 disqus:
   comments: true  # boolean type, the global switch for posts comments.
-  shortname: 'coldfx'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  shortname: 'shebu'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 plugins:
   - jekyll-seo-tag
