@@ -34,4 +34,4 @@
 
 * Twitter - [shebu-hxor](https://twitter.com/shebu_hxor)
 
-* Linkedin - [shebu](https://linkedin.com/p/shebu)
+* Linkedin - [shebu](https://linkedin.com/in/shebu)
