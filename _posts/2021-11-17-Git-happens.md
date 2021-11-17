@@ -15,7 +15,7 @@ image: ../../assets/img/posts/Git-happens/Git-happens.jpg
 
 **Room Link -**  [https://tryhackme.com/room/githappens](https://tryhackme.com/room/githappens) 
 
-**Creator - **  [hydragyrum](https://tryhackme.com/p/hydragyrum) 
+**Creator -**  [hydragyrum](https://tryhackme.com/p/hydragyrum) 
 
 
 ### Task 1 - Find the Super Secret Password
