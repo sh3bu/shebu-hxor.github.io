@@ -4,7 +4,7 @@ title: "Hackthebox —Traverxec Writeup"
 date: 2021-11-17  
 categories: [Hackthebox, HTB-Linux]
 tags: [nostromo, rce, hashcat, tar, ssh2john, linpeas, pspy, johntheripper, gtfobins, journelctl tryhackme]
-image: ../../assets/img/post/Traverxec/traverxec.png 
+image: ../../assets/img/posts/Traverxec/traverxec.png 
 
 ---
 
@@ -25,7 +25,7 @@ image: ../../assets/img/post/Traverxec/traverxec.png
 **Nmap **
 
 
-```
+```zsh
 # Nmap 7.91 scan initiated Thu Jul 15 13:18:21 2021 as: nmap -sC -sV -v -p 22,80 -oN traverxec.nmap 10.10.10.165
 Nmap scan report for 10.10.10.165
 Host is up (0.38s latency).
