@@ -10,7 +10,7 @@ image: ../../assets/img/posts/Openadmin/openadmin.jpg
 ## Summary -
 
 **OpenAdmin** from HackTheBox is an easy-rated machine which involves an exploit for OpenNetAdmin to get a foothold on the machine. There are 2 users on the box Jimmy and Joanna . We get the password for Jimmy via database config file & then ssh as Jimmy, then on enumerating we find an internal application running.Doing a simple curl command reveals id_rsa key of Joanna. We then crack the password of the id_rsa file and ssh into the machine as Joanna. For root, we find that we have sudo privileges over nano . We refer sudo entry for nano on  [gtfobins](https://gtfobins.github.io/gtfobins/nano/)  & we easily escalate our privileges as root!
-<center>
+
 
 | **Name  -** | Openadmin |
 |:---:|---|
@@ -20,7 +20,6 @@ image: ../../assets/img/posts/Openadmin/openadmin.jpg
 | **Creator   -** | [del_KZx497Ju](https://www.hackthebox.eu/home/users/profile/82600) 
  |
 
-</center>
 
 ## Enumeration -
 
