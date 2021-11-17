@@ -8,7 +8,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Shebu_hxor                          # the main title
+title: shebu_hxor                          # the main title
 
 tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
           
@@ -20,7 +20,7 @@ url: 'https://shebu-hxor.github.io'
 
 author: Shebu               # change to your full name
 
-avatar: /assets/img/sample/avatar.png   # support internet resources
+avatar: /assets/img/sample/profile.png   # support internet resources
 
 github:
   username: shebu-hxor             # change to your github username
