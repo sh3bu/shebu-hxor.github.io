@@ -2,7 +2,7 @@
 layout: post
 title: "Tryhackme — Git-happens Writeup"
 date: 2021-11-17  
-categories: [Tryhackme,Linux machines]
+categories: [Tryhackme, Linux-machines]
 tags: [git, tryhackme]
 image: ../../assets/img/posts/Git-happens/Git-happens.jpg
 
