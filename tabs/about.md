@@ -31,7 +31,7 @@
 
 # Contact me via 👇🏻
 
-* Instagram - [_s.h.e.b.u_](https://www.instagram.com/__s.h.e.b.u__/)
+* Instagram - [ _s.h.e.b.u_ ](https://www.instagram.com/__s.h.e.b.u__/)
 
 * Twitter - [shebu-hxor](https://twitter.com/shebu_hxor)
 
