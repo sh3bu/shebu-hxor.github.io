@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tryhackme —Traverxec Writeup"
+title: "Hackthebox —Traverxec Writeup"
 date: 2021-11-16  
 categories: [Hackthebox, HTB-Linux]
 tags: [nostromo, rce, hashcat, tar, ssh2john, linpeas, pspy, johntheripper, gtfobins, journelctl tryhackme]
