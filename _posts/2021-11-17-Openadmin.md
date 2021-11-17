@@ -4,7 +4,7 @@ title: "Hackthebox — Openadmin Writeup"
 date: 2021-11-17  
 categories: [Hackthebox,Linux machines]
 tags: [opennetadmin, gtfobins, ssh2john, id_rsa, hackthebox]
-image: ../../assets/img/posts/Openadmin/openadmin.png
+image: ../../assets/img/posts/Openadmin/openadmin.jpg
 ---
 
 ## Summary -
