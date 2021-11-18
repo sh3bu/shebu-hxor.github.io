@@ -10,7 +10,7 @@
 
 title: Shebu                          # the main title
 
-tagline: CTF Player | Pentester | InfoSec Enthusiast # it will display as the sub-title
+tagline: CTF Player | InfoSec Enthusiast # it will display as the sub-title
           
 description: >-                        # used by seo meta and the atom feed
   
@@ -82,7 +82,7 @@ theme_mode: dark
 # boolean type, global switch for ToC in posts.
 toc: true
 
-paginate: 4
+paginate: 6
 
 markdown: kramdown
 
