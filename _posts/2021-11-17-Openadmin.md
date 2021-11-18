@@ -170,7 +170,7 @@ We get Joanna's password !Lets try ssh into the box as Joanna
 Running `sudo -l` we find we could run nano on `/opt/priv` directory
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1625832068247/PFgUlh4Mw.png)
-So we check  [GTFOBINS](https://gtfobins.github.io/gtfobins/nano/)  for any **sudo entry for nano **
+So we check  [GTFOBINS](https://gtfobins.github.io/gtfobins/nano/)  for any **sudo entry for nano**
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1625832344408/Ds0lpTgVL.png)
 
