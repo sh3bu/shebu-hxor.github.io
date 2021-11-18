@@ -8,12 +8,12 @@
 
 @mixin dark-scheme {
   /* framework */
-  --main-wrapper-bg: rgb(27, 27, 30);
+  --main-wrapper-bg: rgb(53, 228, 123);
   --body-bg: var(--main-wrapper-bg);
   --topbar-wrapper-bg: rgb(39, 40, 43);
   --search-wrapper-bg: rgb(34, 34, 39);
   --search-icon-color: rgb(246, 67, 114);
-  --input-focus-border-color: rgb(255, 255, 255);
+  --input-focus-border-color: rgb(112, 114, 115);
   --mask-bg: rgb(68, 69, 70);
   --footer-bg-color: var(--main-wrapper-bg);
 
