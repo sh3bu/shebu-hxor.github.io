@@ -22,7 +22,7 @@ image: ../../assets/img/posts/Traverxec/traverxec.png
 
 ## Enumeration - 
 
-**Nmap **
+**Nmap**
 
 
 ```zsh
