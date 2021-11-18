@@ -21,6 +21,7 @@ image: ../../assets/img/posts/Traverxec/traverxec.png
 | **Creator   -** | [jkr](https://www.hackthebox.eu/home/users/profile/77141) |
 
 ## Enumeration - 
+------------------------------
 
 **Nmap**
 
@@ -71,6 +72,7 @@ Open msfconsole and search for nostromo & you will get this exploit .
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1626501886372/qXzvevdRR.png)
 
 ## Foothold -
+-----------------------
 
 Lets use the metasploit module . Set the LHOST,RHOST,RPORT & other parameters needed  for the exploit to work and finally run the exploit .
 
@@ -89,6 +91,7 @@ cat /etc/passwd |grep -i "bash"
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1626502184080/OLZ0T6ih4.png)
 
 ## Shell as David -
+---------------------------------
 
 I ran Linpeas to check for any interesting files or any priv-esc vectors , it displayed an md5crypt password  hash of David 
 
@@ -157,6 +160,7 @@ Grab the `user.txt` 🚩
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1626507874305/8yczE0Fxn.png)
 
 ## Shell as Root -
+------------------------------------
 
 Running Linpeas ,we find that we have a shell script called `server-status.sh`
 
