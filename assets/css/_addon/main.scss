@@ -32,7 +32,7 @@
   }
 }
 
-html:not([mode]), html[mode=light] {
+html:not([mode]), html[mode=dark] {
   @include mode-toggle();
 }
 
