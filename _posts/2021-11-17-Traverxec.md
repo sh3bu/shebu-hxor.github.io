@@ -13,7 +13,7 @@ image: ../../assets/img/posts/Traverxec/traverxec.png
  Traverxec is a easy rated machine from hackthebox which involves a public exploit for nostromo web server by which we gain a foothold on the box . On the machine there's a user called `david` .We find an id_rsa key of David in one of the directories  & thus escalating our privileges to David. For root, we make use of a sudo misconfiguration on journelctl binary to escalate our privileges to root !
 
 
-| **Name  -** | ![Traverxec](../../assets/img/posts/Traverxec/traverxec.png) |
+| **Name  -** | Traverxec |
 |:---:|---|
 | **OS   -**    | Linux |
 | **Difficulty -** | Easy |
