@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Tryhackme — ConvertMyVideo Writeup"
-date: 2021-11-16  
+date: 2021-11-27  
 categories: [Tryhackme, THM-Linux]
-tags: [youtube-dl, command-injection, cronjob, tryhackme]
+tags: [youtube-dl, command-injection, cronjob, jtr, pspy, tryhackme]
 image: ../../assets/img/posts/Convertmyvideo/convertmyvideo.jpg 
 
 ---
