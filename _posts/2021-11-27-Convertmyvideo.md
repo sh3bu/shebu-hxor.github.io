@@ -206,7 +206,7 @@ Its frustrating to use this method to execute commands so lets try getting a she
 
 I used `wget` to transfer my payload which ``pentestmonkey's php reverse shell`` to the victim.
 
-![intercept9](../../assets/img/posts/Convertmyvideo/intercept8.png)
+![intercept9](../../assets/img/posts/Convertmyvideo/intercept9.png)
 
 Then set up a listerner & execute `php shell.php` to get a reverse shell back .
 
