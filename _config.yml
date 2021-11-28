@@ -23,7 +23,7 @@ author: Shebu               # change to your full name
 avatar: /assets/img/sample/avatar.png   # support internet resources
 
 github:
-  username: shebu-hxor             # change to your github username
+  username: sh3bu             # change to your github username
 
 twitter:
   username: shebu_hxor            # change to your twitter username
@@ -34,7 +34,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/shebu_hxor      # change to your twitter homepage
-    - https://github.com/shebu-hxor       # change to your github homepage
+    - https://github.com/sh3bu       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/shebu
