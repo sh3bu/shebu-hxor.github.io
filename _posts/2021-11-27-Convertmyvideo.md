@@ -104,7 +104,7 @@ So the only parameter here that we can play with is `yt_url`.
 
 I tried entering `id` to see how the application responds .
 
-![intercept2](../../assets/img/posts/Connvertmyvideo/intercept2.png)
+![intercept2](../../assets/img/posts/Convertmyvideo/intercept2.png)
 
 Error - 
 ```bash
@@ -138,7 +138,7 @@ Note that it returned the result of our `id` command which is `uid=33(www-data) 
 
 So now since we could execute commands , lets look at what directory we are in !
 
-![intercept4](../../assets/posts/img/Convertmyvideo/intercept4.png)
+![intercept4](../../assets/img/posts/Convertmyvideo/intercept4.png)
 
 Response -
 ```bash
