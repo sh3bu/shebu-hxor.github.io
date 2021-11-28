@@ -12,7 +12,7 @@ title: Shebu                          # the main title
 
 tagline: CTF Player | InfoSec Enthusiast # it will display as the sub-title
           
-description: >-                        # used by seo meta and the atom feed
+description: >- Writeups on Tryhackme, Hackthebox & other ctf challenges                        # used by seo meta and the atom feed
   
 
 # Replace with the website url, e.g. 'https://username.github.io'
@@ -39,7 +39,7 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/shebu
 
-google_site_verification:  # change to your verification string
+google_site_verification:  UA-212992960-1 # change to your verification string
 
 #--------------------------
 
@@ -52,7 +52,8 @@ baseurl: ''
 timezone: Asia/Kolkata
 
 google_analytics:
-  id: ''          # Fill with your Google Analytics ID
+  id: 'UA-212992960-1
+'          # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
