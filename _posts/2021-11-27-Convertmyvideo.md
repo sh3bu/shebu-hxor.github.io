@@ -59,7 +59,7 @@ As you can see there are only 2 ports open
 
 The website at port 80 shows us a simple page like this 
 
-![Website](../assets/img/posts/Convertmyvideo/website.png)
+![Website](../../assets/img/posts/Convertmyvideo/website.png)
 
 It asks us for an ID to which it converts it into an video.
 
