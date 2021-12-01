@@ -55,7 +55,7 @@ div > pre {
   @extend %code-snippet-bg;
   @extend %code-snippet-radius;
 
-  color: var(--highlighter-rouge-color);
+  color: #FF007F;
   margin-bottom: 1.2em; /* Override BS Inline-code style */
 }
 
@@ -126,7 +126,7 @@ code {
   }
 
   blockquote &.highlighter-rouge {
-    color: #FF007F;
+    color: inherit;
   }
 }
 
