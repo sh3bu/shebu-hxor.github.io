@@ -30,7 +30,13 @@
 
 # Contact me via 👇🏻
 
-<div align="center">
+* Instagram - [ _s.h.e.b.u_ ](https://www.instagram.com/__s.h.e.b.u__/)
+
+* Twitter - [shebu-hxor](https://twitter.com/shebu_hxor)
+
+* Linkedin - [shebu](https://linkedin.com/in/shebu)
+
+
 
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shebu/)
 [![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/__s.h.e.b.u__/)
