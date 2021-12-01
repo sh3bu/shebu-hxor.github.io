@@ -7,7 +7,6 @@
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
-
 # WHOAMI❓🧑🏻‍💻
 
 * Hi there I'm Shebu 👋🏻
@@ -31,8 +30,10 @@
 
 # Contact me via 👇🏻
 
-* Instagram - [ _s.h.e.b.u_ ](https://www.instagram.com/__s.h.e.b.u__/)
+<div align="center">
 
-* Twitter - [shebu-hxor](https://twitter.com/shebu_hxor)
-
-* Linkedin - [shebu](https://linkedin.com/in/shebu)
+[![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shebu/)
+[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/__s.h.e.b.u__/)
+[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/shebu_hxor)
+[![image](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shebutvm@gmail.com)
+  
