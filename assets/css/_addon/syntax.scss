@@ -55,7 +55,7 @@ div > pre {
   @extend %code-snippet-bg;
   @extend %code-snippet-radius;
 
-  color: #0080FF;
+  color: rgb(138, 180, 248);
   margin-bottom: 1.2em; /* Override BS Inline-code style */
 }
 
