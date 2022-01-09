@@ -9,7 +9,7 @@
 {% include_relative _addon/main.scss %}
 
 #post-list {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-right: .5rem;
 
   .post-preview {
@@ -35,8 +35,8 @@
     }
 
     .post-content {
-      margin-top: .6rem;
-      margin-bottom: .6rem;
+      margin-top: 1rem;
+      margin-bottom: .9rem;
       color: #c2c2c2;
       >p {
         /* Make preview shorter on the homepage */
