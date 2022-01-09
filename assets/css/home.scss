@@ -61,10 +61,10 @@
 
   .page-item {
     .page-link {
-      color: #F64372;
+      color: var(--btn-patinator-text-color);
       width: 2.5rem;
       height: 2.5rem;
-      padding: 1;
+      padding: 0;
       text-align: center;
       display: -webkit-box;
       display: flex;
