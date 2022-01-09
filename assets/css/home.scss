@@ -15,7 +15,7 @@
   .post-preview {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 4px solid var(--main-border-color);
+    border-bottom: 1px solid var(--main-border-color);
 
     h1 {
       font-size: 1.4rem;
@@ -37,7 +37,7 @@
     .post-content {
       margin-top: .6rem;
       margin-bottom: .6rem;
-      color: #d8cfcf;
+      color: #c2c2c2;
       >p {
         /* Make preview shorter on the homepage */
         margin: 0;
