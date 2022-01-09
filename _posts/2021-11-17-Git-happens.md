@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tryhackme — Git-happens Writeup"
+title: "THM — Git-happens"
 date: 2021-11-17  
 categories: [Tryhackme, THM-Linux]
 tags: [git, tryhackme]
