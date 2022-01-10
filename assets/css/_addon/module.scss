@@ -20,13 +20,13 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: #8ab4f8 !important;
+ /*border-bottom: 1px solid #8ab4f8;*/
   text-decoration: none;
 }
 
 %link-color {
-  color: var(--link-color);
+  color: #F64372;
 }
 
 %link-underline {
@@ -38,7 +38,7 @@
 }
 
 %heading {
-  font-weight: 400;
+  font-weight: bold;
   font-family: 'Lato', 'Microsoft Yahei', sans-serif;
 }
 
