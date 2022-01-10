@@ -36,11 +36,11 @@
 
     .post-content {
       margin-top: 1.2rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.1rem;
       color: #c2c2c2;
       >p {
         /* Make preview shorter on the homepage */
-        margin: 0;
+        margin: inherit;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
