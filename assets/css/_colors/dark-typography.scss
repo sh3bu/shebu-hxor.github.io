@@ -31,7 +31,7 @@
   --btn-backtotop-border-color: var(--btn-border-color);
   --btn-box-shadow: var(--main-wrapper-bg);
   --card-header-bg: rgb(51, 50, 50);
-  --label-color: rgb(81, 219, 136);
+  --label-color: #fafa7d;
 
   /* Sidebar */
   --nav-cursor-color: rgb(81, 219, 136);
@@ -58,7 +58,7 @@
   --tb-even-bg: rgb(31, 31, 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
-  --btn-share-color: #E24666;
+  --btn-share-color: rgb(116, 178, 243, 1);
   --btn-share-hover-color: #bfc1ca;
   --relate-post-date: var(--text-muted-color);
   --card-bg: rgb(39, 40, 43);
@@ -66,7 +66,7 @@
   --card-box-shadow: var(--main-wrapper-bg);
 
   /* tags */
-  --tag-border: rgb(81, 219, 136);
+  --tag-border: #E24666;
   --tag-shadow: rgb(32, 33, 33);
   --search-tag-bg: var(--tag-bg);
   --dash-color: rgb(63, 65, 68);
