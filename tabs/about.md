@@ -1,5 +1,5 @@
 ---
-title: Hey there thanks for visiting my blog ! I'm Shebu 👋🏻
+title: Hey there  I'm Shebu 👋🏻
 
 # The About page
 # v2.0
