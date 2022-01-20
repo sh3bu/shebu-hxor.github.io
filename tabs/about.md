@@ -1,5 +1,5 @@
 ---
-
+title: Hey there thanks for visiting my blog ! I'm Shebu 👋🏻
 
 # The About page
 # v2.0
@@ -8,7 +8,7 @@
 # MIT License
 ---
 
-* Hey there I'm Shebu 👋🏻
+
 
 * I am a Information security enthusiast with strong interest in offensive security and penetration testing.
 
