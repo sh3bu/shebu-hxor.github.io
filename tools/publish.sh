@@ -14,7 +14,7 @@ TAGS=false
 LASTMOD=false
 
 git config user.email "shebutvm@gmail.com"
-git config user.name "shebu-hxor"
+git config user.name "sh3bu"
 
 WORK_DIR="$(dirname $(dirname $(realpath "$0")))"
 
