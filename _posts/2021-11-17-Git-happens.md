@@ -2,7 +2,7 @@
 layout: post
 title: "THM — Git-happens"
 date: 2021-11-17  
-categories: [Tryhackme, THM-Linux]
+categories: [Tryhackme, Linux]
 tags: [git, tryhackme]
 image: ../../assets/img/posts/Git-happens/Git-happens.jpg
 
