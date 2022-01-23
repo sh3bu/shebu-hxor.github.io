@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB —Traverxec"
+title: "HTB - Traverxec"
 date: 2021-11-17  
 categories: [Hackthebox, Linux]
 tags: [nostromo, rce, hashcat, tar, ssh2john, linpeas, pspy, johntheripper, gtfobins, journelctl tryhackme]

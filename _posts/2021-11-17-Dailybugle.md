@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "THM — Dailybugle"
+title: "THM - Dailybugle"
 date: 2021-11-16  
 categories: [Tryhackme, Linux]
 tags: [cmseek, joomla, johntheripper, pentestmonkey, linpeas, gtfobins, tryhackme]

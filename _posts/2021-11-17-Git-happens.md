@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "THM — Git-happens"
+title: "THM - Git-happens"
 date: 2021-11-17  
 categories: [Tryhackme, Linux]
 tags: [git, tryhackme]
