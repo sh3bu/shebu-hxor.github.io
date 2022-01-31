@@ -4,7 +4,7 @@ title: "THM - Lumberjack Turtle"
 date: 2022-01-31  
 categories: [Tryhackme, Linux]
 tags: [log4shell, log4j, docker escape, CVE-2021-44228]
-image: ../../assets/img/posts/Lumberjackturtle/lumberjackturle.png 
+image: ../../assets/img/posts/Lumberjackturtle/lumberjackturtle.png 
 ---
 
 # Summary
@@ -220,7 +220,7 @@ So we are user root. Hmm Wierd !
 
 ## Docker_env
 
-Listing all the files in the `/` directory we see a `.dockerenv'  which means we are in a `docker container`.
+Listing all the files in the `/` directory we see a `.dockerenv `  which means we are in a `docker container` .
 
 First lets grab the **user.txt flag* before escalating our privileges.
 **user flag** was neither in the `/home` directory nor in the `/root` directory in the docker container. On further enumeration I found the `user flag` in `/opt` 
@@ -318,7 +318,7 @@ drwx------    2 root     root          4096 Dec 13 01:23 .ssh
 /tmp/realroot/root # cat root.txt
 Pffft. Come on. Look harder.
 ```
-If you notice well , there is a `...` directory. cd into the directory and grab the `root.txt` flag 🎉.
+If you notice well , there is a `...` directory. So cd into the directory and grab the `root.txt` flag 🎉.
 
 ```
 /tmp/realroot/root # cd ...
