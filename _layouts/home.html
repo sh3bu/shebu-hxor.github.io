@@ -77,8 +77,8 @@ layout: page
       {% if post.categories.size > 0 %}
       <i class="far fa-folder-open fa-fw"></i>
       <span>
-      {% for category in post.categories %}
-        {{ category }}
+      {% for tags in post.tags %}
+        {{ tags }}
         {%- unless forloop.last -%},{%- endunless -%}
       {% endfor %}
       </span>
