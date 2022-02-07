@@ -7,9 +7,6 @@ tags: [log4shell, log4j, docker escape, CVE-2021-44228]
 image: ../../assets/img/posts/Lumberjackturtle/lumberjackturtle.png 
 ---
 
-# Summary
---------------
-
 **Lumberjack Turtle** is a medium difficulty box from Tryhackme which is entirely focused on **Log4j/Log4shell** a 0-day vulnerability that caused a havoc on the internet . The website is vulnerable to Log4j & so we're able to exploit it and get a shell on the box . We find a **.dockerenv** file in the / directory which indicates we are on a docker container. To obtain the root flag , we mount the **/dev/xvda1** disk partition since it contains the entire filesystem(/) to access all the files .
 
 ![header](../../assets/img/posts/Lumberjackturtle/header.png)
