@@ -302,7 +302,7 @@ sqlite> SELECT * FROM user;
 Update our permissions to root user.
 
 ```sql
-UPDATE user SET is_admin=1 WHERE id=3;
+sqlite> UPDATE user SET is_admin=1 WHERE id=3;
 ```
 
 Now if we visit the website we see a private repository  called `backups` owned by root!
