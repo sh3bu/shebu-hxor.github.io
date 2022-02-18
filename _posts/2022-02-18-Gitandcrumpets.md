@@ -49,11 +49,11 @@ After the nmap scan I couldn't access the webpage .Initially I thought it might 
 
 The nmap results show that the machine ip is getting redirected to `http://10.10.234.147/index.html` .There was nothing quite interesting here.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website1.png)
 
 Searching for **/robots.txt** or any other directories leads to Rick Roll youtube video .
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website2.png)
 
 We couldn't find any dirctories & there was pretty much nothing we could do here but using curl to retrieve the contents of the webpage reveals the following.
 
@@ -103,7 +103,7 @@ Never gonna give you up,
 
 In the comments we see a hostname called `git.git-and-crumpets.thm` . Added it to /etc/hosts file & visited the page.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website3.png)
 
 It' a `Gitea` page.
 
@@ -111,22 +111,31 @@ It' a `Gitea` page.
 
 Viewing the source code reveals the version of gitea as `1.14.0`
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website4.png)
 
 # Shell as git
 -------------------
 
 Create an account in **signup** page and log in to the account.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website5.png)
 
 Here we have 3 repositories `cant-touch-this`, `hello world`.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website6.png)
 
 There are 4 users `hydra`, `root groot`, `scones`& `test` other than the account which I created. 
 
-Visit the `cant-touch-this` repository which the user `scones` owns .Here there is a comment mentioning the user has stored his password in his avatar.
+![header](../../assets/img/posts/Gitandcrumpets/website7.png)
+
+Visit the `cant-touch-this` repository which the user `scones` owns .
+
+![header](../../assets/img/posts/Gitandcrumpets/website8.png)
+
+There are 5 commits in this repo.
+Here there is a comment in one of the commits mentioning that the user scones has stored his password in his avatar.
+
+![header](../../assets/img/posts/Gitandcrumpets/website9.png)
 
 Using **exiftool** to retrieve user **scones** password .
 
@@ -168,11 +177,11 @@ Blog post for this Githooks RCE - https://podalirius.net/en/articles/exploiting-
 
 Edit the contents of git-hook with a reverse shell one-liner & click on **Update hook.**
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website10.png)
 
 Make changes in README.md file & commit the changes to trigger a callback.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website11.png)
 
 We get a connection back on our machine & we are user `git` on the machine!
 ```bash
@@ -298,15 +307,15 @@ UPDATE user SET is_admin=1 WHERE id=3;
 
 Now if we visit the website we see a private repository  called `backups` owned by root!
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website12.png)
 
 We have 2 branches in here `master` & `dotfiles`.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website13.png)
 
 The **dotfiles** branch has 4 commits. We see that the root user added his ssh keys and then deleted it.
 
-![header](../../assets/img/posts/Gitandcrumpets/header.png)
+![header](../../assets/img/posts/Gitandcrumpets/website14.png)
 
 Lets now grab the SSH private key and ssh into the box as root to grab the root flag!🚩
 
