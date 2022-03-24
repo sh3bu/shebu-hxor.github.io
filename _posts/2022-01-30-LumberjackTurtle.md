@@ -50,6 +50,7 @@ The homepage of the website has only this comment .It gives us a hint as `java` 
 
 ![website1](../../assets/img/posts/Lumberjackturtle/website1.png)
 
+
 ## Directory bruteforcing
 
 ## /~logs
