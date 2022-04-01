@@ -12,7 +12,7 @@ title: About
 
 * I am a Information security enthusiast with strong interest in offensive security and penetration testing.
 
-* I spend my free time solving Tryhackme, Hackthebox & Web-sec-academy.
+* I spend my free time reading books & solving labs at Tryhackme, Hackthebox & Web-sec-academy.
 
 
 <script src="https://tryhackme.com/badge/109109"></script>
