@@ -16,3 +16,5 @@ title: About
 
 
 <script src="https://tryhackme.com/badge/109109"></script>
+
+<a href="https://twitter.com/_sh3bu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @_sh3bu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
