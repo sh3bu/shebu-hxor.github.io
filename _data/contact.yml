@@ -17,9 +17,9 @@
   icon: 'fas fa-cube'
   url: ' https://app.hackthebox.com/profile/433595'
 
-#  type: rss
-#  icon: 'fas fa-rss'
-#  noblank: true
+  type: rss
+  icon: 'fas fa-rss'
+  noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 # -
