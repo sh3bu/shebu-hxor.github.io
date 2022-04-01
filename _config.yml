@@ -8,11 +8,11 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Shebu                          # the main title
+title: Shebu Blog                         # the main title
 
-tagline: TryHackme & Hackthebox writeups # it will display as the sub-title
+tagline:  # it will display as the sub-title
           
-description:  CTF writeups                         # used by seo meta and the atom feed
+description: Tryhackme writeups                         # used by seo meta and the atom feed
   
 
 # Replace with the website url, e.g. 'https://username.github.io'
