@@ -18,6 +18,5 @@ title: About
 >
 > Here's my TryHackMe profile ⬇️ <script src="https://tryhackme.com/badge/109109"></script>
 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b2fb6518-f576-467f-9780-7512684dc4f0" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 
