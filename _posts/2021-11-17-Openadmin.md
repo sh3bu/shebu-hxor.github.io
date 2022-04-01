@@ -2,7 +2,7 @@
 layout: post
 title: "HTB - Openadmin"
 date: 2021-11-17  
-categories: [Hackthebox, HTBLinux]
+categories: [Hackthebox, HTB-linux]
 tags: [opennetadmin, gtfobins, ssh2john, id_rsa]
 image: ../../assets/img/posts/Openadmin/openadmin.jpg
 ---
