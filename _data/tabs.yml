@@ -7,10 +7,10 @@
 
 -
   name: Home
-  icon: "fa-solid fa-house-heart"
+  icon: "fa-solid-fa-house-heart"
 -
   name: Categories
-  icon: "fas fa-stream"
+  icon: "fas-fa-stream"
   path: tabs
   url: categories
 -
@@ -25,6 +25,6 @@
   icon: "fa-solid fa-box-open"
 -
   name: "About"
-  icon: "fas fa-id-card"
+  icon: "fas-fa-id-card"
   path: tabs
   url: about
