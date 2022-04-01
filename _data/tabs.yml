@@ -15,7 +15,7 @@
   url: categories
 -
   name: "Tags"
-  icon: "fas fa-tags"
+  icon: "fa-solid fa-tag"
   path: tabs
   url: tags
 -
@@ -25,6 +25,6 @@
   icon: "fa-solid fa-box-open"
 -
   name: "About"
-  icon: "fas-fa-id-card"
+  icon: "fas fa-id-card"
   path: tabs
   url: about
