@@ -2,7 +2,7 @@
 layout: post
 title: "HTB - Traverxec"
 date: 2021-11-17  
-categories: [Hackthebox, Linux]
+categories: [Hackthebox, HTBLinux]
 tags: [nostromo, ssh2john, pspy, gtfobins, journelctl]
 image: ../../assets/img/posts/Traverxec/traverxec.png 
 
