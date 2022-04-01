@@ -7,7 +7,7 @@ title: About
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
- `Hey there  I'm Shebu 👋`
+ **Hey there  I'm Shebu 👋**
 
 
 * I am a Information security enthusiast with strong interest in offensive security and penetration testing.
