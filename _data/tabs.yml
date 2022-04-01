@@ -7,7 +7,7 @@
 
 -
   name: Home
-  icon: "fas fa-home"
+  icon: "fa-solid fa-house-heart"
 -
   name: Categories
   icon: "fas fa-stream"
@@ -15,14 +15,14 @@
   url: categories
 -
   name: "Tags"
-  icon: "fas fa-tags"
+  icon: "fa-solid fa-tag"
   path: tabs
   url: tags
 -
   name: "Archives"
   path: tabs
   url: archives
-  icon: "fas fa-archive"
+  icon: "fa-solid fa-box-open"
 -
   name: "About"
   icon: "fas fa-id-card"
