@@ -2,7 +2,7 @@
 layout: post
 title: "THM - Lumberjack Turtle"
 date: 2022-01-31  
-categories: [Tryhackme, Linux]
+categories: [Tryhackme, THM-linux]
 tags: [log4shell, log4j, docker escape, CVE-2021-44228]
 image: ../../assets/img/posts/Lumberjackturtle/lumberjackturtle.png 
 ---

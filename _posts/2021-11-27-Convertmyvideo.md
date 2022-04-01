@@ -2,7 +2,7 @@
 layout: post
 title: "THM - ConvertMyVideo"
 date: 2021-11-27  
-categories: [Tryhackme, Linux]
+categories: [Tryhackme, THM-linux]
 tags: [youtube-dl, command-injection, cronjob, jtr, pspy, tryhackme]
 image: ../../assets/img/posts/Convertmyvideo/convertmyvideo.png 
 

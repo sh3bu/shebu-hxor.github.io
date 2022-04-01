@@ -2,7 +2,7 @@
 layout: post
 title: "THM - Gits and Crumpets"
 date: 2022-02-18  
-categories: [Tryhackme, Linux]
+categories: [Tryhackme, THM-linux]
 tags: [fail2ban, git, gitea,githooks, cve-2020-14144]
 image: ../../assets/img/posts/Gitandcrumpets/gitandcrumpets.png 
 ---
