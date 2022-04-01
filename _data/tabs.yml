@@ -10,21 +10,21 @@
   icon: "fa-solid-fa-house-heart"
 -
   name: Categories
-  icon: "fas-fa-stream"
+  icon: "fa-solid-fa-house-heart"
   path: tabs
   url: categories
 -
   name: "Tags"
-  icon: "fa-solid fa-tag"
+  icon: "fa-solid-fa-house-heart"
   path: tabs
   url: tags
 -
   name: "Archives"
   path: tabs
   url: archives
-  icon: "fa-solid fa-box-open"
+  icon: "fa-solid-fa-house-heart"
 -
   name: "About"
-  icon: "fas fa-id-card"
+  icon: "fa-solid-fa-house-heart"
   path: tabs
   url: about
