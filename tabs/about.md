@@ -15,4 +15,4 @@ title: About
 * I spend my free time solving Tryhackme, Hackthebox & Web-sec-academy.
 
 
-
+<script src="https://tryhackme.com/badge/109109"></script>
