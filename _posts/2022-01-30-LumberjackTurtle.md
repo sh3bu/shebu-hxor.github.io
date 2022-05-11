@@ -11,7 +11,7 @@ image: ../../assets/img/posts/Lumberjackturtle/lumberjackturtle.png
 
 ![header](../../assets/img/posts/Lumberjackturtle/header.png)
 
-|  **Room** 	| Lumberjack Turtle                                           	|
+|  **Room** 	| <img width="25" height="25" alt="Lumberjack Turtle" src="/assets/img/posts/Lumberjackturtle/lumb.webp">                                          	|
 |:--------------:	|----------------------------------------------------	|
 |     **OS**     	| Linux                                              	|
 | **Difficulty** 	| Medium                                             	|
