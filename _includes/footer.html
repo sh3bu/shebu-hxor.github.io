@@ -5,21 +5,28 @@
   © 2017-2019 Cotes Chung
   MIT License
 -->
-
 <footer class="d-flex w-100 justify-content-center">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="footer-left">
+      <p class="mb-0">
+		<br>
+		<br>
+        © {{ 'now' | date: "%Y" }}
+        <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+        {% if site.data.rights.brief %}
+        <span data-toggle="tooltip" data-placement="top"
+          title="{{ site.data.rights.verbose }}">{{ site.data.rights.brief }}</span>
+			<br>
+			<script src="https://tryhackme.com/badge/109109"></script>
+        {% endif %}
+      </p>
+    </div>
 
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="footer-left">
-          <p class="mb-0">
-            © {{ 'now' | date: "%Y" }}
-            <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-            {% if site.data.rights.brief %}
-            <span data-toggle="tooltip" data-placement="bottom"
-            <script src="https://tryhackme.com/badge/109109"></script>
-              title="{{ site.data.rights.verbose }}">{{ site.data.rights.brief }}</span>
-            {% endif %}
-          </p>
-        </div>
+    <div class="footer-right">
+     <p class="mb-0">
+      <h4>:(){  :|: &amp; }; :</h4>
+      </p>
+    </div>
 
   </div> <!-- div.d-flex -->
 </footer>
