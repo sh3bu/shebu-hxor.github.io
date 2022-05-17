@@ -10,8 +10,6 @@ permalink: robots.txt
 
 User-agent: *
 
-Allow: /
+Disallow: /norobots/
 
 Sitemap: {{ site.url | append: site.baseurl }}/sitemap.xml
-
-Sitemap: https://sh3bu.github.io/sitemap.xml
