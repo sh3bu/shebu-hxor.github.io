@@ -117,4 +117,4 @@ Visiting  pastebin.com/yTg0Ah6a gives us the name of the file,
 
 ![header](/assets/img/posts/ItsyBitsy/9.png)
 
-> Secret code - THM{SECRET_CODE}
+> Secret code - THM{SEC****E}
