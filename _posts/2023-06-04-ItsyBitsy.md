@@ -4,12 +4,11 @@ title: "THM - ItsyBitsy"
 date: 2023-06-04 
 categories: [Tryhackme, THM-linux]
 tags: [Elastic, Kibana, C2 server]
-image: ../../assets/img/posts/ItsyBitsy/itsybitsy.png
 ---
 
 **ItsyBitsy** is a medium difficulty room from tryhackme which involves using Kibana  to examine the network connection logs of a suspicious user, find the link and the content of the file, and answer the questions.
 
-![header](/assets/img/posts/ItsyBitsy/itsybitsy.png)
+![1](/assets/img/posts/ItsyBitsy/itsybitsy.png)
 
 
 |  **Room** 	| <img width="25" height="25" alt="ItsyBitsy" src="/assets/img/posts/ItsyBitsy/itsy.webp">                                          	|
