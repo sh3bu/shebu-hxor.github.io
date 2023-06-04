@@ -4,6 +4,7 @@ title: "THM - ItsyBitsy"
 date: 2023-06-04 
 categories: [Tryhackme, THM-linux]
 tags: [Elastic, Kibana, C2 server]
+image: ../../assets/img/posts/ItsyBitsy/itsybitsy.png 
 ---
 
 ![header](/assets/img/posts/ItsyBitsy/itsybitsy.png)
