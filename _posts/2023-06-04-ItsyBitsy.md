@@ -6,10 +6,10 @@ categories: [Tryhackme, THM-linux]
 tags: [Elastic, Kibana, C2 server]
 ---
 
-!(/assets/img/posts/Lumberjackturtle/header.png)
+![header](/assets/img/posts/ItsyBitsy/itsybitsy.png)
 
 
-|  **Room** 	| <img width="25" height="25" alt="ItsyBitsy" src="/assets/img/posts/ItsyBitsy/ItsyBitsy.webp">                                          	|
+|  **Room** 	| <img width="25" height="25" alt="ItsyBitsy" src="/assets/img/posts/ItsyBitsy/itsy.webp">                                          	|
 |:--------------:	|----------------------------------------------------	|
 | **Difficulty** 	| Medium                                             	|
 |  **Room Link** 	| [https://tryhackme.com/room/itsybitsy](https://tryhackme.com/room/itsybitsy)               	|
@@ -40,7 +40,7 @@ Our task in this room will be to examine the network connection logs of this use
 
 Adjust the `time filter` to show the events that happended between **March 1 to March 31**
 
-![[Pasted image 20230604093632.png]]
+![header](/assets/img/posts/ItsyBitsy/1.png)
 
 > Number of events - 1482
 
@@ -48,18 +48,18 @@ Adjust the `time filter` to show the events that happended between **March 1 to 
 
 In the `fields pane` click on **source_ip** to view the IP addresses associated with the logs. We can't tell which IP is associated with the suspected user.
 
-![[Pasted image 20230604094553.png]]
+![header](/assets/img/posts/ItsyBitsy/2.png)
 
 The second IP has fewer logs . Lets create a filter to view logs which pertain only to that IP address.
 
 `_index:connection_logs AND source_ip:192.166.65.54`
 
-![[Pasted image 20230604095533.png]]
+![header](/assets/img/posts/ItsyBitsy/3.png)
 
 We need to ensure if this is an C2C server. For that we can use `Alienvault` 's  Malware C2C database.
 Link - https://otx.alienvault.com/pulse/5c76b2acd1420a1aac451307
 
-![[Pasted image 20230604101345.png]]
+![header](/assets/img/posts/ItsyBitsy/4.png)
 
 From the search result , we can see that the IP **104.23.99.198** is present in  their database hence confirming our doubt.
 
@@ -78,18 +78,18 @@ In the `Fields pane` , click on **user_agent** field to view what user agent was
 
 As seen before only 2 event's traffic is related to that IP address in which both the user_agent is **bitsadmin**.
 
-![[Pasted image 20230604102619.png]]
+![header](/assets/img/posts/ItsyBitsy/5.png)
 
 
 ### The infected machine connected with a famous filesharing site in this period, which also acts as a C2 server used by the malware authors to communicate. What is the name of the filesharing site?
 
-Query - `_index:connection_logs AND user_agent:bitsadmin AND destination_ip :     104.23.99.190 AND host: * `
+Query - `_index:connection_logs AND user_agent:bitsadmin AND destination_ip :104.23.99.190 AND host: * `
 
 where , 
 
 - `host : *`  - represents any host.
 
-![[Pasted image 20230604102911.png]]
+![header](/assets/img/posts/ItsyBitsy/6.png)
 
 > File sharing site - pastebin.com
 
@@ -97,7 +97,7 @@ where ,
 
 The URI is  `/yTg0Ah6a`
 
-![[Pasted image 20230604103053.png]]
+![header](/assets/img/posts/ItsyBitsy/7.png)
 
 
 > Full URL - pastebin.com/yTg0Ah6a 
@@ -107,12 +107,12 @@ The URI is  `/yTg0Ah6a`
 
 Visiting  pastebin.com/yTg0Ah6a gives us the name of the file,
 
-![[Pasted image 20230604103744.png]]
+![header](/assets/img/posts/ItsyBitsy/8.png)
 
 > Filename - secret.txt
 
 ### The file contains a secret code with the format THM{_____}.
 
-![[Pasted image 20230604103841.png]]
+![header](/assets/img/posts/ItsyBitsy/9.png)
 
 > Secret code - THM{SECRET_CODE}
