@@ -58,8 +58,9 @@ The second IP has fewer logs . Lets create a filter to view logs which pertain o
 
 ![header](/assets/img/posts/ItsyBitsy/3.png)
 
-We need to ensure if this is an C2C server. For that we can use `Alienvault` 's  Malware C2C database.
-Link - https://otx.alienvault.com/pulse/5c76b2acd1420a1aac451307
+We need to ensure if this is an C2C server. For that we can use `Alienvault`'s  Malware C2C database.
+
+> Link - https://otx.alienvault.com/pulse/5c76b2acd1420a1aac451307
 
 ![header](/assets/img/posts/ItsyBitsy/4.png)
 
@@ -67,7 +68,7 @@ From the search result , we can see that the IP **104.23.99.198** is present in 
 
 So the source_ip which is associated with the suspected user is found.
 
->Source_ip of suspected user - 192.166.65.54
+> Source_ip of suspected user - 192.166.65.54
 
 ### The user’s machine used a legit windows binary to download a file from the C2 server. What is the name of the binary?
 
@@ -85,7 +86,9 @@ As seen before only 2 event's traffic is related to that IP address in which bot
 
 ### The infected machine connected with a famous filesharing site in this period, which also acts as a C2 server used by the malware authors to communicate. What is the name of the filesharing site?
 
-Query - `_index:connection_logs AND user_agent:bitsadmin AND destination_ip :104.23.99.190 AND host: * `
+Query - 
+
+`_index:connection_logs AND user_agent:bitsadmin AND destination_ip :104.23.99.190 AND host: * `
 
 where , 
 
